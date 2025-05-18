@@ -76,9 +76,9 @@ void batalha(Carta *player, Carta *cpu, int pesos[3]) {
     exibirCarta(*cpu);
 
     int resultado = compararCartas(*player, *cpu, pesos);
-    if (resultado == 1) printf("\n🔥 Voce venceu essa rodada!\n");
-    else if (resultado == -1) printf("\n💀 Voce perdeu essa rodada!\n");
-    else printf("\n🤝 Empate!\n");
+    if (resultado == 1) printf("\nVoce venceu essa rodada!\n");
+    else if (resultado == -1) printf("\nVoce perdeu essa rodada!\n");
+    else printf("\nDeu Empate!\n");
 }
 
 void modoMataMata(Carta cartas[], int total, int pesos[3]) {
@@ -106,7 +106,7 @@ void modoMataMata(Carta cartas[], int total, int pesos[3]) {
         total = novaQtd;
     }
 
-    printf("\n🏆 Campeao: %s\n", cartas[0].nome);
+    printf("\nGanhou: %s\n", cartas[0].nome);
 }
 
 int main() {
